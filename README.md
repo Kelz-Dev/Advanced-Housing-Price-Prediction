@@ -2,6 +2,23 @@
 This project, 'Advanced House Price Prediction System', aims to accurately predict house prices using the 'Ames Housing Dataset', fetched from OpenML as 'house_prices'. The primary objective is to build robust predictive models by transforming the target variable, SalePrice.
 
 
+The Condition1 and Condition2 features in the Ames Housing Dataset describe the proximity of the house to various important local points of interest, main roads, or land features. They essentially ask: "What is this house next to?"
+
+There are two features (Condition1 and Condition2) because a single house might be next to multiple things (e.g., a house located on the corner of a main street and next to a park). Condition1 simply captures the primary proximity condition, and Condition2 catches any secondary one (if it exists).
+
+Here is what all the abbreviation options in that dropdown actually mean in plain English:
+
+Norm (Normal): The house is not near anything particularly remarkable or disruptive. It’s just a normal neighborhood lot. Most houses fall into this category.
+Artery: The house is located adjacent to an Arterial Street (a major, high-traffic main road or thoroughfare within the city). Typically lowers property value due to noise.
+Feedr: The house is adjacent to a Feeder Street (a medium-traffic street that "feeds" traffic from residential areas onto arterial streets).
+RRNn: The house is within 200 feet of a North-South Railroad.
+RRAn: The house is adjacent to the tracks of an East-West Railroad.
+PosN: The house is near a Positive Off-Site Feature (often a park, greenbelt, scenic area, etc.). Usually increases value!
+PosA: The house is adjacent to a Positive Off-Site Feature. (Even closer than PosN).
+RRNe: The house is within 200 feet of an East-West Railroad.
+RRAe: The house is adjacent to the tracks of a North-South Railroad.
+
+
 Summary:
 
 Data Analysis Key Findings
